@@ -1,1 +1,266 @@
-<!-- write code here -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My shop shop shop</title>
+</head>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    color: #28a745;
+}
+header .logo img {
+    margin-right: 10px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+header nav ul li a { 
+    text-decoration: none; 
+    color: #333;
+    font-weight: 600;
+}
+
+header nav ul li a:hover {
+    color: #007bff;
+}
+
+.container {
+    max-width: 90vw;
+    height: 90vh;
+    margin: 20px auto;
+    background: #f7f7f7;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.container h1{
+    color: #28a745;
+    padding-left: 30px;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:baseline;
+    padding: 10px 30px;
+}
+.items .info{     
+    display: flex;
+    align-items: center;
+}
+.items .info img{     
+padding-right: 30px ;
+width: 180px;
+}
+.item .details{ text-align: left;
+    margin: 10px 0px;
+}
+.item .details p{ 
+    margin: 20px;
+}
+select {
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.delete{
+    background: rgb(253, 233, 233);
+    border: #da7673 solid;
+    color: #da7673;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 6px;
+    padding: 5px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.delete:hover {
+    color: #be120c;
+    border: #be120c solid;
+    background: #be120c3f;
+}
+
+.info {
+    margin-top: 20px;
+    padding: 20px;
+    background: #f6f6f6;
+    border-radius: 8px;
+    width: 30vw;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+    
+
+.info h2 {
+        margin-bottom: 20px;
+}
+  
+.info p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.item1{
+    position: absolute;
+    top: 28%;
+}
+
+.item2{
+    position: absolute;
+    top: 58%;
+}
+
+.order{
+    background: #f8f8f8;
+    border: #4d4d4d2f solid 2px;
+    border-radius: 8px;
+    width: 750px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    padding: 5px 5px 10px 20px;
+    top:250px;
+    left: 43%;
+    position: absolute;
+
+}
+
+
+
+#promotion {
+    padding: 10px;
+    width: calc(100% - 90px);
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.apply {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px 0px 0px 0px;
+}
+
+.apply:hover {
+    background-color: #0056b3;
+}
+
+.checkout {
+    width: 100%;
+    padding: 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+
+.checkout:hover {
+    background-color: #218838;
+}
+
+
+</style>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://picsum.photos/id/42/60/60" alt="Shop">
+            <h1>Test Store</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">PASSCARD</a></li>
+                <li><a href="#">PROFILE</a></li>
+                <li><a href="#">SEARCH</a></li>
+                <li><a href="#">LOGIN</a></li>
+                <li><a href="#">SIGN UP</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1>My Cart</h1>
+            <div class="items">
+                <div class="item1">
+                    <div class="info">
+                        <img src="https://picsum.photos/id/200/100/100" alt="Pic1">
+                        <div class="details">
+                            <h2>Cow Cow</h2>
+                            <p>Used for ก๋วยเตี๋ยว</p>
+                            <p>THB 150</p>
+                            <select>
+                                <option>Grade 1-3</option>
+                                <option>Grade 2-3</option>
+                                <option>Grade 3-3</option>
+                            </select>
+                        <button class="delete">Delete</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item2">
+                    <div class="info">
+                        <img src="https://picsum.photos/id/70/100/100" alt="Pic2">
+                        <div class="details">
+                            <h2>Tree Tree</h2>
+                            <p>Used for ลวกใส่เตี๋ยว</p>
+                            <p>THB 100</p>
+                            <select>
+                                <option>Grade 1-3</option>
+                                <option>Grade 2-3</option>
+                                <option>Grade 3-4</option>
+                            </select>
+                        <button class="delete">Delete</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="order">
+                    <h2>Order Info</h2>
+                    <p>Subtotal: THB 300</p>
+                    <label for="promotion">Promotion code</label>
+                    <input type="text" id="promotion">
+                    <button class="apply">APPLY</button>
+                    <p>Total payment: THB 300</p>
+                    <button class="checkout">LOG IN TO CHECKOUT</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+</body>
+</html><!-- write code here -->
